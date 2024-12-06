@@ -1,0 +1,3 @@
+[submodule "Hands-On-Large-Language-Models"]
+	path = Hands-On-Large-Language-Models
+	url = git@github.com:DavidAmat/Hands-On-Large-Language-Models.git
