@@ -1,5 +1,13 @@
 # llm
 
+## Manage Environments
+
+### Book: Hands-On-Large-Language-Models
+```bash
+conda_init
+conda activate b_hollm
+```
+
 ## Submodules management
 
 To create a repository on GitHub that includes multiple forked repositories as primary folders alongside your own development folder, while allowing you to easily fetch updates from the original repositories, follow these steps:
@@ -125,4 +133,58 @@ Install ipykernel
 
 ```bash
 python -m ipykernel install --user --name "kr_hollm"
+```
+
+
+## Update Forked Repos
+
+### Update the Forked Repo with the Original Repo
+
+```bash
+# ******************************* #
+#     Forked Repos
+# ******************************* #
+# Go to the ds/ forked_repos folder and go to your forked repo Hands-On-Large-Language-Models in this example
+
+# Add the upstream remote:
+git remote add upstream https://github.com/HandsOnLLM/Hands-On-Large-Language-Models.git
+
+# Check that the remote was added
+git remote -v
+
+# Fetch the changes from the original repo
+git fetch upstream
+
+# Merge the changes from upstream/main (the branch from the original repo) to the local main branch of the forked one
+git merge upstream/main
+
+# Push the changes to your origin main
+git push origin main
+```
+
+### Update the Submodule of the Forked Repo inside LLM repo
+```bash
+# ******************************* #
+#     Forked Repos
+# ******************************* #
+# Assume some changes were made to the Forked repo in data_science/forked_repos/Hands-On-Large-Language-Models/README.md
+
+# ******************************* #
+#     LLM Repo
+# ******************************* #
+# Go to llm repo locally 
+cd Hands-On-Large-Language-Models
+
+# Ensure with git remote -v that the repo is set as the origin
+# git fetch origin  # if we want to be cautious and not merge with the current changes
+# git merge origin/main
+
+# Otherwise run
+git pull origin main
+
+# Add the changes to llm/
+cd ..
+git add Hands-On-Large-Language-Models
+git commit -m
+
 ```
