@@ -2,3 +2,4 @@
 .gguf
 .cache
 **/weights/**/*
+**/training_*/**/*
