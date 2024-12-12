@@ -1,6 +1,11 @@
 .env
+*.pyc
+# Book: Hands on LLM
 .gguf
 .cache
 **/weights/**/*
 **/training_*/**/*
 **/training/**/*
+
+# Book: LLMS from scratch
+**/gpt2_model/**/*
