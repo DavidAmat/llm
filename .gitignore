@@ -3,3 +3,4 @@
 .cache
 **/weights/**/*
 **/training_*/**/*
+**/training/**/*
