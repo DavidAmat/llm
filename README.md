@@ -15,7 +15,9 @@ To create a repository on GitHub that includes multiple forked repositories as p
 ### Step 1: **Add Forked Repositories as Git Submodules**
 1. Inside the cloned repository folder, add each forked repository as a submodule:
    ```bash
-   git submodule add git@github.com:DavidAmat/Hands-On-Large-Language-Models.git
+   git submodule add git@github.com:DavidAmat/Hands-On-Large-Language-Models.git repos/Hands-On-Large-Language-Models
+   git submodule add git@github.com:DavidAmat/LLMs-from-scratch.git repos/LLMs-from-scratch
+
    ```
 
 2. Initialize and update the submodules:
