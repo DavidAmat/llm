@@ -129,14 +129,19 @@ conda create --name b_hollm python=3.10.14
 conda activate b_hollm
 # conda env update --file environment.yml
 pip install -r requirements.txt
-```
-
-Install ipykernel
-
-```bash
 python -m ipykernel install --user --name "kr_hollm"
 ```
 
+### Book: LLMs-from-scratch
+
+```bash
+# Notation: b_ -> book // b_llfs: llms from scratch
+conda create --name b_llmfs python=3.10.12
+conda activate b_llmfs
+# conda env update --file environment.yml
+pip install -r requirements.txt
+python -m ipykernel install --user --name "kr_llmfs"
+```
 
 ## Update Forked Repos
 
