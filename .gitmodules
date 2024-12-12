@@ -1,3 +1,6 @@
 [submodule "repos/Hands-On-Large-Language-Models"]
 	path = repos/Hands-On-Large-Language-Models
 	url = git@github.com:DavidAmat/Hands-On-Large-Language-Models.git
+[submodule "repos/LLMs-from-scratch"]
+	path = repos/LLMs-from-scratch
+	url = git@github.com:DavidAmat/LLMs-from-scratch.git
