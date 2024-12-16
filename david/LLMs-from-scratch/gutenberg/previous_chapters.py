@@ -287,8 +287,8 @@ def generate_and_print_sample(model, tokenizer, device, start_context):
     model.train()
 
 
-def plot_losses(epochs_seen, tokens_seen, train_losses, val_losses):
-    fig, ax1 = plt.subplots(figsize=(5, 3))
+def plot_losses(epochs_seen, tokens_seen, train_losses, val_losses, output_dir):
+    fig, ax1 = plt.subplots()
 
     # Plot training and validation loss against epochs
     ax1.plot(epochs_seen, train_losses, label="Training loss")
@@ -296,7 +296,7 @@ def plot_losses(epochs_seen, tokens_seen, train_losses, val_losses):
     ax1.set_xlabel("Epochs")
     ax1.set_ylabel("Loss")
     ax1.legend(loc="upper right")
-    ax1.xaxis.set_major_locator(MaxNLocator(integer=True))  # only show integer labels on x-axis
+    ax1.xaxis.set_major_locator(MaxNLocator(integer=True))
 
     # Create a second x-axis for tokens seen
     ax2 = ax1.twiny()  # Create a second x-axis that shares the same y-axis
@@ -304,5 +304,4 @@ def plot_losses(epochs_seen, tokens_seen, train_losses, val_losses):
     ax2.set_xlabel("Tokens seen")
 
     fig.tight_layout()  # Adjust layout to make room
-    plt.savefig("loss-plot.pdf")
-    plt.show()
+    plt.savefig(output_dir / "losses.pdf")

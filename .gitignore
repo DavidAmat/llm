@@ -6,6 +6,9 @@
 **/weights/**/*
 **/training_*/**/*
 **/training/**/*
+**/gutenberg/**/*.json
+**/gutenberg/model_checkpoints/*
+*.pdf
 
 # Book: LLMS from scratch
 **/gpt2_model/**/*
