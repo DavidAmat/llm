@@ -12,3 +12,10 @@
 
 # Book: LLMS from scratch
 **/gpt2_model/**/*
+**/gpt2/**/*
+**/checkpoints/**/*
+*.pth
+**/Llama-2-7b/**/*
+**/ch7-model/**/*
+**/instruction-data-with-response.json
+*.zip
