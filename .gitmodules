@@ -4,3 +4,6 @@
 [submodule "repos/LLMs-from-scratch"]
 	path = repos/LLMs-from-scratch
 	url = git@github.com:DavidAmat/LLMs-from-scratch.git
+[submodule "repos/lightning-mlflow-hf"]
+	path = repos/lightning-mlflow-hf
+	url = git@github.com:DavidAmat/lightning-mlflow-hf.git
