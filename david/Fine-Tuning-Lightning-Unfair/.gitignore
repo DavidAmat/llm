@@ -1,0 +1,3 @@
+# Repo: Fine Tuning Lightning Unfair
+model-checkpoints/**/*
+logging/**/*

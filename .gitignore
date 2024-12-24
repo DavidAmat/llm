@@ -19,3 +19,7 @@
 **/ch7-model/**/*
 **/instruction-data-with-response.json
 *.zip
+
+# Repo: Fine Tuning Lightning Unfair
+# **/model-checkpoints/**/*
+# **/logging/**/*
