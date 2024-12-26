@@ -1,3 +1,8 @@
 # Repo: Fine Tuning Lightning Unfair
 model-checkpoints/**/*
 logging/**/*
+mlruns/**
+mlartifacts/**
+lightning_logs/**
+MNIST/**
+
