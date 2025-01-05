@@ -1,0 +1,16 @@
+# python 3.10.14
+# pip install https://download.pytorch.org/whl/cu121_full/torch-2.5.1%2Bcu121-cp310-cp310-linux_x86_64.whl#sha256=2cb5923cc771377d3d7591eeaf9e98c901145542564ccd0f24114cbdcb9aed59
+torchmetrics
+datasets
+lightning
+mlflow
+onnx
+peft
+bitsandbytes
+sentencepiece
+transformers
+jupyterlab
+pandas 
+numpy
+# auto-gptq
+pip install -v gptqmodel --no-build-isolation
